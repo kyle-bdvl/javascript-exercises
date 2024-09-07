@@ -1,6 +1,8 @@
 const leapYears = function(year) {
-
-  if (year%4 ==0 &&year%400==0 )
+  const is100Year = year %100 === 0;
+  const is4years = year % 4 ===0;
+  const divideBy400Years = year % 400 ===0;
+  if (is4years && (!is100Year ||divideBy400Years) )
     return true;
   else
     return false;
