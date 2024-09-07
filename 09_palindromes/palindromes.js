@@ -9,6 +9,7 @@ const palindromes = function (string) {
   else 
     return false;
 
+    return reverse;
 };
 
 // Do not edit below this line
